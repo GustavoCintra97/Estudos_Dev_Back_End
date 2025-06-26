@@ -3,13 +3,14 @@ from turma import Turma
 
 def inputStr(msg, condicao=None, erro="\nEntrada inválida!"):
     while True:
-        palavra = input(msg).upper
-        if palavra == "":
-            print("Entrada vazia não é permitida.")
-        elif condicao and not condicao(palavra):
-            print(erro)
-        else:
-            return palavra
+        try:
+            palavra = input(msg)
+            if condicao and not condicao(palavra):
+                print(erro)
+            else:
+                return palavra
+        except Exception:
+            print("Erro ao ler a entrada.")
 
 def inputInt(msg, condicao=None, erro="\nEntrada inválida!"):
     while True:

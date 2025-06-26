@@ -1,6 +1,6 @@
-# 📚 Sistema de Criação de Turmas e Verificação de Médias
+# 📚 Sistema de Cadastro de Alunos com Classes
 
-Sistema simples em Python para cadastrar alunos, calcular médias e gerenciar turmas via terminal.
+Aplicação em Python para cadastro de alunos em turmas, com funcionalidades para adicionar, listar, remover e calcular média geral, via terminal.
 
 ---
 
@@ -8,11 +8,12 @@ Sistema simples em Python para cadastrar alunos, calcular médias e gerenciar tu
 
 Este projeto permite:
 
-- Criar uma turma
-- Adicionar, remover e listar alunos
+- Criar uma turma com nome e capacidade
+- Adicionar alunos com nome, idade e notas
+- Listar todos os alunos cadastrados
+- Remover alunos por nome
 - Calcular a média geral da turma
-- Validar entradas com segurança
-- Interface interativa no terminal
+- Interação via terminal com entradas validadas
 
 ---
 
@@ -20,8 +21,8 @@ Este projeto permite:
 
 - Python 3
 - Programação Orientada a Objetos (POO)
+- Terminal interativo
 - Git e GitHub
-- Terminal (modo texto)
 
 ---
 
@@ -30,5 +31,62 @@ Este projeto permite:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/GustavoCintra97/Estudos_Dev_Back_End/tree/master/Projetos.git
-cd Projeto 1 - Sistema de Cadastro de Alunos com Classes
+git clone https://github.com/GustavoCintra97/Estudos_Dev_Back_End.git
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd Estudos_Dev_Back_End/Projetos/Projeto\ 1\ -\ Sistema\ de\ Cadastro\ de\ Alunos\ com\ Classes
+```
+
+3. Execute o script principal:
+
+```bash
+python main.py
+```
+
+> Certifique-se de que os arquivos `aluno.py`, `turma.py` e `functions.py` estão na mesma pasta do `main.py`
+
+---
+
+## 🖼️ Exemplo de uso
+
+```text
+Digite o nome da turma: Engenharia
+Digite a capacidade da turma: 3
+
+Menu:
+1. Adicionar aluno
+2. Listar alunos
+3. Remover aluno
+4. Média geral da turma
+0. Sair
+```
+
+![Exemplo do terminal](print_terminal.png)
+
+---
+
+## 📁 Estrutura do projeto
+
+```
+.
+├── aluno.py         # Classe Aluno
+├── turma.py         # Classe Turma
+├── functions.py     # Funções auxiliares e menus
+├── main.py          # Arquivo principal do sistema
+├── README.md        # Este arquivo
+└── print_terminal.png  # Imagem de exemplo da execução
+```
+
+---
+
+## ✍️ Autor
+
+- Gustavo Cintra  
+- [github.com/GustavoCintra97](https://github.com/GustavoCintra97)
+
+---
+
+> Projeto desenvolvido como parte da evolução para Desenvolvedor Back-End Júnior
