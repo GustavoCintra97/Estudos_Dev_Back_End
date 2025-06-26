@@ -92,5 +92,3 @@
 
 Finalizados os 4 projetos, você estará 100% pronto para iniciar com o **framework Django**, criando projetos reais com banco de dados, views, templates e API REST.
 
-Se quiser, posso montar o cronograma do módulo Django a seguir. Deseja isso?
-
