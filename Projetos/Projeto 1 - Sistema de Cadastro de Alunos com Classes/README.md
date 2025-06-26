@@ -1,3 +1,4 @@
+
 # 📚 Sistema de Cadastro de Alunos com Classes
 
 Aplicação em Python para cadastro de alunos em turmas, com funcionalidades para adicionar, listar, remover e calcular média geral, via terminal.
@@ -8,21 +9,21 @@ Aplicação em Python para cadastro de alunos em turmas, com funcionalidades par
 
 Este projeto permite:
 
-- Criar uma turma com nome e capacidade
-- Adicionar alunos com nome, idade e notas
-- Listar todos os alunos cadastrados
-- Remover alunos por nome
-- Calcular a média geral da turma
-- Interação via terminal com entradas validadas
+- Criar uma turma com nome e capacidade  
+- Adicionar alunos com nome, idade e notas  
+- Listar todos os alunos cadastrados  
+- Remover alunos por nome  
+- Calcular a média geral da turma  
+- Interação via terminal com entradas validadas  
 
 ---
 
 ## 🧰 Tecnologias utilizadas
 
-- Python 3
-- Programação Orientada a Objetos (POO)
-- Terminal interativo
-- Git e GitHub
+- Python 3  
+- Programação Orientada a Objetos (POO)  
+- Terminal interativo  
+- Git e GitHub  
 
 ---
 
@@ -46,7 +47,7 @@ cd Estudos_Dev_Back_End/Projetos/Projeto\ 1\ -\ Sistema\ de\ Cadastro\ de\ Aluno
 python main.py
 ```
 
-> Certifique-se de que os arquivos `aluno.py`, `turma.py` e `functions.py` estão na mesma pasta do `main.py`
+> Certifique-se de que os arquivos `aluno.py`, `turma.py` e `functions.py` estão na mesma pasta do `main.py`.
 
 ---
 
@@ -86,7 +87,3 @@ Menu:
 
 - Gustavo Cintra  
 - [github.com/GustavoCintra97](https://github.com/GustavoCintra97)
-
----
-
-> Projeto desenvolvido como parte da evolução para Desenvolvedor Back-End Júnior
