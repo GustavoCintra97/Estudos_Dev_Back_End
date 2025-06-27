@@ -1,63 +1,118 @@
-# Gestor de Estoque com Descontos
 
-Sistema de linha de comando em Python para gestão de múltiplos estoques e aplicação de descontos em produtos.
+# 🧰 Gestor de Estoque com Descontos
+
+Projeto em Python para gerenciamento de múltiplos estoques, com funcionalidades para cadastrar produtos, listar, remover, aplicar descontos (com validação) e controle total de itens.
 
 ---
 
-## 🛠️ Tecnologias
+## 📋 Sumário
+
+1. [Sobre](#sobre)  
+2. [Funcionalidades](#funcionalidades)  
+3. [Tecnologias](#tecnologias)  
+4. [Instalação](#instalação)  
+5. [Uso](#uso)  
+6. [Estrutura](#estrutura)  
+7. [Evolução](#evolução)  
+8. [Próximos passos](#próximos-passos)
+
+---
+
+## Sobre
+
+Este projeto é um sistema de linha de comando (CLI) que permite gerenciar múltiplos estoques, cadastrar produtos, aplicar descontos e manter o total de itens atualizado. O foco está na organização, validação de entradas, tratamento de erros e interface interativa com `rich`.
+
+---
+
+## Funcionalidades
+
+- Criar múltiplos estoques.
+- Selecionar qual estoque está ativo para operações.
+- Cadastrar produtos (nome, preço, quantidade) com validação de entradas e unicidade de nomes.
+- Listar produtos com contagem.
+- Remover produtos, com escolha por índice se houver mais de um produto com mesmo nome.
+- Exibir quantidade total de itens no estoque.
+- Aplicar descontos percentuais, garantindo que o preço não fique negativo.
+- Interface colorida e limpa com `rich`, mensagens de erro claras e tratamento de exceções.
+
+---
+
+## Tecnologias
 
 - **Python 3.10+**
-- **rich** – formatação e cores no terminal
-- **re** – validação de formatos com expressões regulares
-- Estrutura modular: `produto`, `estoque`, `gestao`, `utils`, `main.py`
+- [rich](https://pypi.org/project/rich/) – Interface de terminal enriquecida
+- Módulos padrão: `dataclasses`, `typing`, `re`, `os`, `traceback`
 
 ---
 
-## 🚀 Como executar
+## Instalação
 
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/GustavoCintra97/Estudos_Dev_Back_End.git
+   cd Estudos_Dev_Back_End/Projetos/Projeto\ 2\ -\ Gestor\ de\ Estoque\ com\ Descontos
+   ```
+2. Crie um ambiente virtual e instale dependências:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # ou .\venv\Scripts\activate no Windows
+   pip install rich
+   ```
+
+---
+
+## Uso
+
+Execute o script principal:
 ```bash
-git clone https://github.com/GustavoCintra97/Estudos_Dev_Back_End.git
-cd Estudos_Dev_Back_End/Projetos/Projeto\ 2\ -\ Gestor\ de\ Estoque\ com\ Descontos
-pip install rich
 python main.py
 ```
 
----
+Siga o menu:
 
-## 🚩 Funcionalidades
-
-- Criar e gerenciar vários estoques
-- Cadastrar, listar e remover produtos
-- Calcular estoque total
-- Aplicar descontos válidos (formato `%`, ponto ou vírgula, sem preços negativos)
-- Interface enriquecida com `rich`
-
----
-
-## 🧩 Estrutura de arquivos
-
-```
-gestao.py       → classe `Gestao` para controlar disponíveis
-estoque.py      → classe `Estoque` com attributes e método `nomeFormatado`
-produto.py      → classe `Produto`
-utils.py        → funções de entrada, menu, lógica central
-main.py         → loop interativo, tratamento de exceções
-```
+1. Criar novo estoque  
+2. Selecionar estoque  
+3. Cadastrar produto  
+4. Listar produtos  
+5. Remover produto  
+6. Exibir total itens  
+7. Aplicar desconto  
+0. Sair
 
 ---
 
-## ⭐ Próximas melhorias (roadmap)
+## Estrutura do Projeto
 
-- **Persistência de dados**: salvar estoques em JSON/CSV
-- **Testes unitários** com Pytest
-- **APIs REST** com Flask ou Django
-- **Docker** para ambiente executável
-- **Tratamento de concorrência** para multi-usuários
+- `main.py` – Loop principal e integração com `utils`.  
+- `utils.py` – Funções modulares: entrada de dados, menu, lógica de produto/estoque, aplicação de descontos, telas.  
+- `produto.py`, `estoque.py`, `gestao.py` – Classes com `dataclass` para abstração de entidades.  
+- `README.md` – Documentação do projeto.
 
 ---
 
-## 📝 Contribuição
+## Evolução
 
-1. Faça um fork
-2. Crie uma branch
-3. Submeta PR
+- 🔹 Começou com input/print simples.  
+- 🔹 Refatoração para múltiplos estoques (`Gestao`), descontos parametrizados e validações.  
+- 🔹 Adição da biblioteca `rich` para interface colorida e interação melhorada.  
+- 🔹 Criação do `inputComParse(...)` e uso de regex para entradas robustas (descontos, floats, ints).
+
+**Seu nível atual:**  
+Você já domina lógica de fluxo (`while`, `if`, menus), estruturação modular, classes, tratamento de erros, parsing de entradas, validação e interface interativa. Está pronto para avançar!
+
+---
+
+## Próximos Passos
+
+- Persistência com leitura/gravação em arquivo JSON ou banco SQLite.
+- Implementação de testes unitários com `pytest`.
+- Evolução para uma API simples usando `Flask` ou `FastAPI`.
+- Suporte a operações adicionais: editar produto, filtragem, relatórios.
+
+---
+
+## 🚀 Próxima Etapa
+
+Como você está pronto para avançar, sugiro persistência e testes como próximos desafios. Amanhã podemos configurar banco de dados ou iniciar uma pequena API para evoluir o projeto.
+
+Parabéns pela evolução — ficou excelente! 🙌
