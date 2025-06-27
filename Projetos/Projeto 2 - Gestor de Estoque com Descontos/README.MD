@@ -79,6 +79,8 @@ Siga o menu:
 7. Aplicar desconto  
 0. Sair
 
+
+![Exemplo do terminal](print_terminal.png)
 ---
 
 ## Estrutura do Projeto
