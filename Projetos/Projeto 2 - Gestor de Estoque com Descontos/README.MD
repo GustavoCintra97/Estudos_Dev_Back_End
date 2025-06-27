@@ -97,10 +97,6 @@ Siga o menu:
 - 🔹 Adição da biblioteca `rich` para interface colorida e interação melhorada.  
 - 🔹 Criação do `inputComParse(...)` e uso de regex para entradas robustas (descontos, floats, ints).
 
-**Seu nível atual:**  
-Você já domina lógica de fluxo (`while`, `if`, menus), estruturação modular, classes, tratamento de erros, parsing de entradas, validação e interface interativa. Está pronto para avançar!
-
----
 
 ## Próximos Passos
 
@@ -108,11 +104,3 @@ Você já domina lógica de fluxo (`while`, `if`, menus), estruturação modular
 - Implementação de testes unitários com `pytest`.
 - Evolução para uma API simples usando `Flask` ou `FastAPI`.
 - Suporte a operações adicionais: editar produto, filtragem, relatórios.
-
----
-
-## 🚀 Próxima Etapa
-
-Como você está pronto para avançar, sugiro persistência e testes como próximos desafios. Amanhã podemos configurar banco de dados ou iniciar uma pequena API para evoluir o projeto.
-
-Parabéns pela evolução — ficou excelente! 🙌
