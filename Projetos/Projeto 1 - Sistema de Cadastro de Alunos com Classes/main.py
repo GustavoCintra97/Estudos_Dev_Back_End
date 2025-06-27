@@ -1,7 +1,5 @@
 import os
-from aluno import Aluno
-from turma import Turma
-from functions import inputStr,inputInt, inputFloat, criarTurma, adicionaAluno, removerAluno, listarAlunos, desejaContinuar, exibirMenu
+from utils import inputInt, criarTurma, adicionaAluno, removerAluno, listarAlunos, desejaContinuar, exibirMenu
 
 print("Olá! Bem-vindo ao Sistema de criação de turmas e verificação de médias de Gustavo!\nCrie sua Turma para iniciar!")
 

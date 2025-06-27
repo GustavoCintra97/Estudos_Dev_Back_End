@@ -1,5 +1,6 @@
 from aluno import Aluno
 from turma import Turma
+from textwrap import dedent
 
 def inputStr(msg, condicao=None, erro="\nEntrada inválida!"):
     while True:
@@ -64,8 +65,12 @@ def adicionaAluno(turma: Turma) -> Aluno:
 
 def listarAlunos(turma: Turma):
     print(f"\nLista de alunos da turma {turma.nomeTurma}:\n")
-    for a in turma.alunos:
-        print(a)
+    if not turma.alunos:
+        print("Nenhum produto cadastrado no estoque.\n")
+        return
+
+    for i, aluno in enumerate(turma.alunos, start=1):
+        print(f"{i}. {aluno}")
 
 def removerAluno(turma: Turma):
     nome = input("Digite o nome do aluno que deseja remover: ").strip().lower()
@@ -86,5 +91,11 @@ def desejaContinuar():
     return resposta.upper() == "S"
 
 def exibirMenu():
-    print("\nMenu:")
-    print("\n1. Adicionar aluno.\n2. Listar alunos.\n3. Remover aluno.\n4. Média geral da turma.\nDigite 0 para Sair.")
+    print(dedent("""
+    \nMenu:
+    1. Adicionar aluno
+    2. Listar alunos
+    3. Remover aluno
+    4. Média geral da turma
+    0. Sair
+    """))

@@ -4,11 +4,7 @@ from aluno import Aluno
 @dataclass
 class Turma:
     nomeTurma: str
-    alunos: list
-
-    def __str__(self):
-        media = sum(self.nota) / len(self.nota) if self.nota else 0
-        return f"\n{self.nome} (Idade: {self.idade}, Média: {media:.2f})"
+    alunos: list[Aluno]
 
     def mediaGeral(self):
         contagem = 0
